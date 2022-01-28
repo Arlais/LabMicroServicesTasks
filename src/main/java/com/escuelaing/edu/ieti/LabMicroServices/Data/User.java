@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class User {
 
-    private static final AtomicInteger count= new AtomicInteger(0);
+    private static final AtomicInteger count= new AtomicInteger(1);
     private int id;
     private String name;
     private String email;
@@ -22,4 +22,27 @@ public class User {
         createdAt=new Date();
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
 }

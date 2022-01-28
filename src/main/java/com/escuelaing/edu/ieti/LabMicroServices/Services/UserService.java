@@ -12,7 +12,7 @@ public interface UserService {
 
     List<User> getAll();
 
-    void deleteById( int id );
+    void deleteById( int id ) throws Exception;
 
     User update( User user, int userId );
 
